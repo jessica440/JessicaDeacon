@@ -4,10 +4,19 @@
 <head>
   <link rel="stylesheet" href="style.css">
 </head>
+<script> 
 
+  function changeImage()
+  {
+  var img = document.getElementById("slide 1");
+  img.src="slide 1";
+  return ;
+  }
+  
+  </script>
 <body>
-  <p> hello </p>
-  <p2> Jessica </p2>
+  <h1> Jessica Deacon </h1>
+  <p2 align=right><span style="background-color: black">Jessica</span></p2>
  <div>
   <button id="github" onclick="window.location.href ='https://github.com/jessica440/JessicaDeacon';" type="button"> Github </button>
    </div>
@@ -17,6 +26,48 @@
    <div>
      <button id="freeCodeCamp" onclick="window.location.href ='https://www.freecodecamp.org/fcc65337d1f-76d3-4cd9-b2aa-e8abbce03776';" type="button"> freeCodeCamp </button>
    </div>
-</body>
+  </body>
+   <div class="carousel container">
+     <div class="slides">
+       <div class="number">1/5</div>
+       <img src="slide5.png" style="width: 100%">
+       <div class="text">Slide One</div>
+     </div>
+     <div class="slides">
+       <div class="number">2/5</div>
+       <img src="slide4.png" style="width: 100%">
+       <div class="text">Slide Two</div>
+     </div>
+     <div class="slides">
+       <div class="number">3/5</div>
+       <img src="slide2.png" style="width: 100%">
+       <div class="text">Slide Three</div>
+     </div>
+     <div class="slides">
+       <div class="number">4/5</div>
+       <img src="slide1.png" style="width: 100%">
+       <div class="text">Slide Four</div>
+     </div>
+     <div class="slides">
+       <div class="number">5/5</div>
+       <img src="slide3.png" style="width: 100%">
+       <div class="text">Slide Five</div>
+     </div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+   </div>
+   <br>
+   <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+  
+   <div>
+     <button id="clickMe" onclick="document.getElementById('myImage').src='slide1'";>Click Me!</button>
+   </div>
+
 
 </html>
