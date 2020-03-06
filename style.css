@@ -1,0 +1,120 @@
+body {
+    background-color: purple;
+    background-image: url('./cursor.png');
+    cursor: url('chikenleg.png'), auto;
+    width: 100vw;
+    height: 100vh;
+  }
+  h1 {
+    font-family: Helvetica;
+    color: orange;
+  }
+  p2 {
+    font-family: Helvetica;
+    font-size: 110%;
+    text-align: justify;  
+  text-align: right;
+    color: pink;
+  }
+  @font-face {
+    font-family: 'careBears';
+    src: url('careBears.ttf');
+  }
+  button {
+    margin: 5px;
+
+   font-family: 'careBears';   
+   background-color: transparent;
+   border: none;
+  }
+  #github {
+    cursor: url('cigar.png'), auto;
+    background: url('rainbow.png');
+    align-items: center;
+    font-size: 145px;
+    display: center;
+  }
+  #codewars {
+      cursor: url('clown.png'), auto;
+      background: url('rainbow.png');
+      align-items: center;
+      font-size: 109px;
+  }
+  #freeCodeCamp {
+      cursor: url('carrot.png'), auto;
+      background: url('bone.png');
+      align-items: center;
+      font-size: 67px;
+  }
+  #clickMe {
+      cursor: url('taco.png'), auto;
+      background: url('stars.png');
+      font-size: 70px;
+      color: white;
+  }
+ 
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    box-sizing:border-box;
+  }
+  
+  
+  .prev, .next {
+    cursor: url('taco.png'), auto;
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    top: 50%;
+    width: auto;
+    margin-top: -20px;
+    padding: 15px;
+    color: white;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: black;
+  }
+
+  .slides {
+    
+  }
+
+  .text {
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 15px;
+  }
+
+  .number {
+    color: white;
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  
+  .dot {
+    cursor: url('bunny.png'), auto;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+    background-color: rgb(48, 255, 7);
+    display: inline-block;
+  }
+
+  .active, .dot:hover {
+    background-color: #fa06b1;
+  }
