@@ -5,42 +5,59 @@ body {
     width: 100vw;
     height: 100vh;
   }
-  h1 {
-    font-family: Helvetica;
-    color: orange;
+  #profile {
+    cursor: url('bunny.png'), auto;
   }
+
+  h1 {
+    font-size: 20px;
+    font-family: Helvetica;
+    color: orange; 
+  }
+
+  h2 {
+    font-size: 20px;
+    font-family: Helvetica;
+    color: black;
+  }
+
   p2 {
     position: absolute;
     right: 0;
     font-family: Helvetica;
-    font-size: 110%;
+    font-size: 30px;
     text-align: justify;  
     text-align: right;
     color: pink;
   }
+
   @font-face {
     font-family: 'careBears';
     src: url('careBears.ttf');
   }
+
   button {
     margin: 5px;
     font-family: 'careBears';   
     background-color: transparent;
     border: none;
   }
+
   #github {
     cursor: url('cigar.png'), auto;
     background: url('rainbow.png');
     align-items: center;
-    font-size: 145px;
+    font-size: 137px;
     display: center;
   }
+
   #codewars {
       cursor: url('clown.png'), auto;
       background: url('rainbow.png');
       align-items: center;
-      font-size: 109px;
+      font-size: 108px;
   }
+  
   #freeCodeCamp {
       cursor: url('carrot.png'), auto;
       background: url('bone.png');
@@ -50,11 +67,28 @@ body {
 
 #slides{
 	position: relative;
-  /* height: 100%; */
   width: 100vw;
-	/* padding: 0px; */
 	margin: 0px;
 	list-style-type: none;
+}
+
+.me {
+  background: url('cloudcopy.png');
+  font-size: 83px;
+  color: black;
+  /* font-family: Helvetica; */
+}
+
+.active, .me:hover {
+  cursor: url('clown.png'), auto;
+  background: url('stars.png');
+}
+
+.content {
+  /* padding: 0 5px; */
+  display: none;
+  overflow: hidden;
+  /* background-color: #fa06b1; */
 }
 
 .slide{
@@ -110,7 +144,7 @@ body {
     background: url('stars.png');
     font-size: 70px;
     color: white;
-    position: absolute;
+    position: relative;
     z-index: 20;
 }
 
