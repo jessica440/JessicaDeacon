@@ -171,7 +171,7 @@ body {
   }
 
   .active, .circle:hover {
-    background-color: #fa06b1;
+    background-color: rgb(255, 7, 131);
   }
 
   .active, .controls:hover {
