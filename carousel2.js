@@ -10,9 +10,10 @@ function nextSlide() {
 }
 
 function prevSlide() {
+	console.log("currentSlide",currentSlide)
 	// var newmg = document.getElementById('img').innerHTML = "<img src='slide3.png'>"
 	if (currentSlide < 1) {
-		currentSlide = (image.length - 1) % image.length;
+		currentSlide = (image.length - 1) % image.length
 		return image[image.length - 1];
 	} else {
 	image[currentSlide].className = 'slide';
@@ -42,14 +43,28 @@ pauseButton.onclick = function() {
 	}
 };
 
-// var input = document.getElementById("myInput");
-// input.addEventListener("keyup", function(event) {
-//   if (event.keyCode === 37) {
-// 	event.prevSlide();
-//   } else (event.keyCode === 39) {
-// 	  event.nextSlide();
-//   }
+// // var input = document.getElementByClass("content");
+// document.addEventListener("keydown", function(event) {
+//   if (event.key === 37) {
+//   console.log("next");
+// 	prevSlide();}
+//    else if (event.key === 39) {
+//    console.log("prev");
+// 	nextSlide();}
+  
 // });
+
+document.addEventListener('keydown', logKey);
+
+function logKey(e) {
+  console.log(e);
+  if (e.code === "ArrowLeft") {
+	console.log("next");
+	  prevSlide();}
+	 else if (event.key === "ArrowRight") {
+	 console.log("prev");
+	  nextSlide();}
+}
 
 // document.onkeydown = function arrowNav(e) {
 // 	switch (e.keydown) {
